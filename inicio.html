@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dacrearte</title>
+    <link rel="stylesheet"  href="estilo.css">
+    <link rel="stylesheet" media="screen and (max-width:900px)" href="estilocel.css">
+
+
+    <script src="https://kit.fontawesome.com/c8e94e2280.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script src="https://kit.fontawesome.com/c8e94e2280.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+    <header>
+        
+    <img id="logo" src="images/lopgodacrearte2.PNG" alt="logo">
+    <img id="titulo" src="images/titulodacrearte.PNG" alt="titulo">
+           
+
+
+        <nav>
+
+            <i id="logonav" class="fa-solid fa-bars"></i>
+            <div class="div-buscador-header">
+            
+                <input type="text" placeholder="Busca tu producto...">
+                <i class="fa-solid fa-magnifying-glass glass"></i>
+               </div>
+            <ul>
+                <li><a href="#inicioi">Inicio</a></li>
+                <li><a href="#productosi">Productos</a></li>
+                <li><a href="#galeriai">Galería</a></li>
+                <li id="cont"><a href="#contactanosi" onclick="contactus()">Contáctanos</a></li>
+                
+            </ul>
+        </nav>
+
+
+    </header> 
+
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+      
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <video src="images/WhatsApp Video 2022-02-12 at 4.35.52 PM.mp4" width="100%"  controls muted autoplay loop >No se cargo el video</video>
+
+          </div>
+      
+          <div class="item">
+            <video src="images/WhatsApp Video 2022-02-12 at 4.35.53 PM (1).mp4" width="100%"  controls muted autoplay loop >No se cargo el video</video>
+            
+          </div>
+      
+          <div class="item">
+            <video src="images/WhatsApp Video 2022-02-12 at 4.35.53 PM.mp4" width="100%"  controls muted autoplay loop >No se cargo el video</video>
+            
+          </div>
+        </div>
+      
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+        <a name="inicioi"></a>
+      </div>
+    
+    <section id="inicio">
+        
+        <div>
+            <h2>Regala con amor</h2>
+            <h3>La tienda #1 de regalos en Panamá</h3>
+        </div>
+        <img src="images/WhatsApp Image 2022-02-12 at 5.57.59 PM.jpeg" alt="daphne">
+
+        <div id="botones">
+            
+
+            <button onclick="quienesSomos()" style="width:15%">Quiénes somos</button>
+            <button onclick="actualizar()" style="width:15%">Como pagar</button>
+            <button onclick="formapago()" style="width:15%">Forma de pago</button>
+    
+            
+        </div>
+        <div id="textoinicio">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quisquam veniam, expedita dignissimos incidunt voluptates delectus inventore excepturi nisi doloremque est et similique mollitia. Consectetur amet quidem rem vel officia ipsum nulla, natus totam quam adipisci ea fuga quaerat ipsam?</p>
+
+            
+        </div>
+
+        
+        <a name="productosi"></a>
+    </section>
+    
+    <section id="productosda">
+        <br>
+        
+        <div id="tituloProd"> 
+            <h2>Productos</h2>
+        </div>
+    
+        
+        <div class="container-fluid mt-5 galeria row mx-0">
+            <div class="col-4 conten-imagen-gal">
+                <div class="titulo-prod"> 
+                    <h3>Cuadros</h3>
+                </div>
+                <div class="texto-img" id="preciocuad" onclick="precioCuadro()">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, voluptatem quam aspernatur iusto suscipit in necessitatibus alias quibusdam. Nisi atque dolore, vel deserunt neque soluta.</p>
+                </div>
+                <img class="img-gal" src="images/gal8.jpg" alt="pintando" width="80%">
+            </div>
+            <div class="col-4 conten-imagen-gal">
+                <div class="titulo-prod"> 
+                    <h3>Jackets</h3>
+                </div>
+                <div class="texto-img" onclick="precioPersonalizados()">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos optio voluptatum voluptatibus delectus repellendus, placeat consequuntur magni eaque. Perferendis, provident debitis? Laboriosam qui vero ut ullam in neque mollitia iusto?</p>
+                </div>
+                <img class="img-gal" src="images/gal7.jpg" alt="pintando" width="80%">
+            </div>
+            <div class="col-4 conten-imagen-gal">
+                <div class="titulo-prod"> 
+                    <h3>Tazas</h3>
+                </div>
+                <div class="texto-img" id="preciotaz" onclick="precioTaza()">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, autem. Quam sapiente, dicta voluptatum eos voluptatem accusantium sit deserunt. Nisi a labore at porro delectus iusto soluta adipisci unde maiores saepe suscipit sint laudantium neque voluptatem, amet accusamus in eum inventore quisquam?</p>
+                </div>
+                <img class="img-gal" src="images/gal3.jpg" alt="pintando" width="80%">
+            </div>
+        </div>
+        <div class="container-fluid mt-5 galeria row mx-0">
+            <div class="col-4 conten-imagen-gal">
+                <div class="titulo-prod"> 
+                    <h3>Caja de Regalos</h3>
+                </div>
+                <div class="texto-img" onclick="precioPersonalizados()">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam harum eaque quasi expedita qui magnam dolore vero? Eius nisi quisquam id amet voluptatum inventore, ratione quos, tempora molestias nobis cupiditate necessitatibus placeat..</p>
+                </div>
+                <img class="img-gal" src="images/fotodap.jpg" alt="pintando" width="80%">
+            </div>
+            <div class="col-4 conten-imagen-gal">
+                <div class="titulo-prod"> 
+                    <h3>Combos</h3>
+                </div>
+                <div class="texto-img" onclick="precioPersonalizados()">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae id quidem cumque rem quia dolorem autem dicta, atque eos eum non voluptates, porro officia placeat repellat officiis sed.</p>
+                </div>
+                <img class="img-gal" src="images/gal2.jpg" alt="pintando" width="80%">
+            </div>
+            <div class="col-4 conten-imagen-gal">
+                <div class="titulo-prod"> 
+                    <h3>Empaques</h3>
+                </div>
+                <div class="texto-img" onclick="precioPersonalizados()">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae veritatis at facilis natus ab blanditiis ratione sunt corrupti assumenda vel enim, nostrum veniam ex quibusdam ducimus voluptatibus quod? Maxime, iure inventore?.</p>
+                </div>
+                <img class="img-gal" src="images/gal9.jpg" alt="pintando" width="80%">
+            </div>
+        </div>
+        
+
+
+        
+           
+        
+            
+        
+    </section>
+
+
+    <section id="galeria">
+        <a name="galeriai"></a>
+        <h1>Galería</h1>
+        <div class="galcont"> 
+            <div class="imagen-galeria">
+                <img src="images/fotodap.jpg" width="80%">
+            </div>
+            <div class="imagen-galeria">
+                <img src="images/gal2.jpg" width="80%">
+            </div>
+            <div class="imagen-galeria">
+                <img src="images/gal3.jpg" width="80%">
+            </div>
+        </div>
+        <div class="galcont"> 
+            <div class="imagen-galeria">
+                <img src="images/gal10.jpg" width="80%">
+            </div>
+            <div class="imagen-galeria">
+                <img src="images/gal9.jpg" width="80%">
+            </div>
+            <div class="imagen-galeria">
+                <img src="images/gal8.jpg" width="80%">
+            </div>
+        </div>
+        
+       
+
+    
+    </section>
+
+    <section id="contactanosda">
+        <!--<a name="contactanosi"></a>-->
+
+
+        <aside id="modal-contactanos" class="closemodal">
+            <h2 class="modal-title">Déjanos tus datos: </h2>
+            <form action="#" method="get" class="order">
+          
+             <label for="nameform">Nombre: </label>
+             <input type="text" id="nameform" value="">
+          
+             <label for="emailform">Email: </label>
+             <input type ="email" id="emailform" value="">
+          
+             <label for="celform">Celular: </label>
+             <input type="text" id="name" value="">
+             <button onclick="closecontactus()">Enviar</button>
+            </form>
+            <i onclick="closecontactus()" class="fa-solid fa-xmark"></i>
+           </aside>
+
+
+        <footer>
+            
+            <a title="Tiktok Dacrearte" href="https://www.tiktok.com/@dacrearte"><img id="logotiktok" src="images/613776d7cfd85d00045d1549.png" alt="Tiktok" /></a>
+            <a title="Whatsapp Dacrearte"  href="
+            https://api.whatsapp.com/send?phone=50766906648"><img id="logowha" src="images/580b57fcd9996e24bc43c543.png" alt="Instagram" /></a>
+            <a title="Instagram Dacrearte"  href="https://www.instagram.com/dacrearte/"><img id="logoinsta" src="images/580b57fcd9996e24bc43c521.png" alt="Instagram" /></a>
+        
+        </footer>
+        
+    </section>
+
+    
+   
+
+    <script src="javascript.js"></script>
+    
+</body>
+</html>
